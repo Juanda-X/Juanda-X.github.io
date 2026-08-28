@@ -20,7 +20,7 @@ header {
 
 nav ul {
     display: flex;
-    padding: 20px;
+    padding: 10px;
 }
 
 li {
@@ -108,32 +108,34 @@ li a:hover {
     max-width: 500px;
     height: auto;
     padding: 10px;
+    border: 5px solid #000;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
     border-image: fill 0 linear-gradient #0001 #000;
 }
 
-.parallax {
-    background-image: url('gambar/saya.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
+//.parallax {
+background-image: url('Cihuy.jpg');
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
 
+}
 .tentang {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #05284E;
+    background: linear-gradient(to bottom, #05284E, #FBC500);
     color: #eaeaea;
-    padding: 30px;
+    padding: 10px;
 }
-
 .mt-10 {
     margin-top: 20px;
 }
-
 .card {
     display: flex;
     justify-content: center;
@@ -141,7 +143,6 @@ li a:hover {
     align-items: center;
     gap: 8px;
 }
-
 .card-item {
     width: 25%;
     min-height: 200px;
@@ -152,26 +153,30 @@ li a:hover {
     padding: 24px;
     box-shadow: 2px 5px 5px 1px black;
 }
-
 @media screen and (max-width:500px) {
     .card {
         flex-direction: column;
         gap: 0;
         opacity: 0.9;
     }
+    
     .card-item {
         width: 100%;
     }
+    
     .container {
         width: 100%;
         padding: 0;
     }
+    
     .img-foto {
         padding: 0;
     }
+    
     .intro {
         margin-top: 20px;
     }
+    
     nav {
         position: fixed;
         bottom: 0;
@@ -179,29 +184,26 @@ li a:hover {
         background: #05284E;
         z-index: 9;
     }
+    
     footer {
         margin-bottom: 70px;
     }
 }
-
 .icon {
     width: 75px;
     height: 75px;
     margin: 10px;
     padding: 4px;
 }
-
 .title {
     font-size: 18px;
     font-weight: bolder;
 }
-
 .description {
     font-size: 14px;
     font-weight: 10px;
     margin-top: 4px;
 }
-
 footer {
     padding: 20px;
     text-align: center;
